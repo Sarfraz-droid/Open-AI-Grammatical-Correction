@@ -11,5 +11,10 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "openai-api": "^1.2.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarfraz-droid/Open-AI-Grammatical-Correction.git"
+  },
+  "homepage": "https://github.com/Sarfraz-droid/Open-AI-Grammatical-Correction"
 }
