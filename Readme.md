@@ -8,8 +8,7 @@ If you find any issue you message me or open a PR.
 
 ## Usage
 
-```
-require('dotenv').config()
+```javascript
 
 const openai = require('openai-grammaticalcorrection')
 
@@ -22,7 +21,7 @@ openai.APIkey(process.env.OPENAI_API_KEY);
 ```
 
 Output should be as 
-```
+```json
 {
   id: 'cmpl-4AnafCXtp8GCYELLzdY9tgZDyTxC5',
   object: 'text_completion',
