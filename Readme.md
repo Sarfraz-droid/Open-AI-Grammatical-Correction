@@ -21,7 +21,7 @@ openai.APIkey(process.env.OPENAI_API_KEY);
 ```
 
 Output should be as 
-```json
+```javascript
 {
   id: 'cmpl-4AnafCXtp8GCYELLzdY9tgZDyTxC5',
   object: 'text_completion',
