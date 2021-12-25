@@ -25,7 +25,25 @@ async function GetError(text)
     return gptResponse.data
 }
 
+async function GetResponse(text)
+{
+    text = text.split('\n').join(' ');
+    const gptResponse = await openai.complete({
+            engine:"davinci",
+            prompt:`Human: ${text}\nAI:`,
+            temperature:0.9,
+            max_tokens:150,
+            top_p:1,
+            frequency_penalty:0.0,
+            presence_penalty:0.6,
+            stop:["\n", " Human:", " AI:"]
+    });
+
+    return gptResponse.data
+}
+
 module.exports = {
     APIkey : APIkey,
-    GetError : GetError
+    GetError : GetError,
+    GetResponse : GetResponse
 }

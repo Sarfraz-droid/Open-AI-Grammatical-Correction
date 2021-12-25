@@ -37,4 +37,34 @@ Output should be as
   ]
 }
 
+
+```
+
+### Text Completion
+
+
+```javascript
+(async () => {
+    const data = await openai.GetResponse('Who are you?');
+
+    console.log(data);
+})();
+```
+
+Output should be as
+```
+{
+  id: 'cmpl-4IvLnvGTRNf3JG5Ohswj8wgjE1EOm',
+  object: 'text_completion',
+  created: 1640415707,
+  model: 'davinci:2020-05-03',
+  choices: [
+    {
+      text: ' I am your AI TSB.',
+      index: 0,
+      logprobs: null,
+      finish_reason: 'stop'
+    }
+  ]
+}
 ```
