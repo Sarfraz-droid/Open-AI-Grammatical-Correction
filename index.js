@@ -9,9 +9,11 @@ function APIkey(key)
 
 async function GetError(text)
 {
+
+    text = text.split('\n').join(' ');
     const gptResponse = await openai.complete({
         engine:"davinci",
-        prompt:`Original: ${text}\nStandard American English:`,
+        prompt:`Original: ${text}\n  $ Standard American English:`,
         temperature:0,
         max_tokens:60,
         top_p:1.0,
